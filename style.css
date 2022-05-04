@@ -103,15 +103,21 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 16px 20px;
+  padding: 18px 24px;
   background-color: var(--color-zinc-100);
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+}
+
+nav a:not(:last-child) {
+  margin-right: 16px;
 }
 
 a {
@@ -125,11 +131,17 @@ a:hover {
 }
 
 main {
-  padding: 0 20px;
+  padding: 0 24px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 96px;
+  padding-top: 48px;
 }
 
 footer {
-  padding: 16px 20px;
+  padding: 18px 24px;
   font-size: 14px;
   color: var(--color-zinc-600);
   text-align: center;
