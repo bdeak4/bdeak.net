@@ -165,7 +165,7 @@ h2 {
   overflow: hidden;
   margin-bottom: 24px;
   border-radius: 6px;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 .project__image {
@@ -181,6 +181,30 @@ h2 {
 .project__title {
   font-size: 48px;
   margin: 0;
+}
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.package {
+  padding: 16px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--color-zinc-200);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  width: 25%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.package__title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.package nav {
+  margin-top: auto;
 }
 
 footer {
