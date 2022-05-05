@@ -13,8 +13,6 @@
   </head>
   <body>
     <div class="background"></div>
-    <div class="peek-right"></div>
-    <div class="peek-left"></div>
     <div class="content">
       <header>
         <h1><a href="/">Bartol Deak</a></h1>
@@ -159,30 +157,36 @@
         </section>
 
         <h2 id="kontakt">Kontakt</h2>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
+        <section class="contact">
+          <form class="contact__form">
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Ime i prezime"
+              class="contact__input"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+              class="contact__input"
+            />
+            <textarea
+              rows="5"
+              name="message"
+              required
+              placeholder="Poruka"
+              class="contact__textarea"
+            ></textarea>
+            <button type="submit" class="contact__button">Pošalji</button>
+          </form>
+          <p>
+            ...ili pošalji mail na
+            <a href="mailto:b@bdeak.net">b@bdeak.net</a>
+          </p>
+        </section>
       </main>
       <footer>&copy; 2022 Bartol Deak</footer>
     </div>
