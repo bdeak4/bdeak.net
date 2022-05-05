@@ -31,6 +31,11 @@ html {
   --color-cyan-900: #164e63;
 }
 
+::selection {
+  background-color: var(--color-cyan-600);
+  color: var(--color-zinc-100);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -116,6 +121,14 @@ h1 {
   margin: 0;
 }
 
+nav {
+  display: flex;
+}
+
+nav a {
+  display: block;
+}
+
 nav a:not(:last-child) {
   margin-right: 16px;
 }
@@ -138,6 +151,36 @@ h2 {
   margin: 0;
   font-size: 96px;
   padding-top: 48px;
+  padding-bottom: 8px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.project__image-container {
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.project__image {
+  width: 100%;
+}
+
+.project__text {
+  max-width: 500px;
+  margin-left: 48px;
+  margin-bottom: 48px;
+}
+
+.project__title {
+  font-size: 48px;
+  margin: 0;
 }
 
 footer {
