@@ -234,6 +234,14 @@ h2 {
   transform: translate(1px, 1px);
 }
 
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
 footer {
   padding: 18px 24px;
   font-size: 14px;

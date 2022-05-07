@@ -1,9 +1,15 @@
+const messages = {
+  "message-required": "Poruka je obavezna",
+  "email-not-valid": "Email nije validan",
+  "mail-sent": "Poruka uspješno poslana",
+};
+
 document
   .querySelector(".contact__form")
-  .addEventListener("submit", function (event) {
+  .addEventListener("submit", async function (event) {
     event.preventDefault();
 
-    fetch(
+    const response = await fetch(
       "https://sr2k3rjwcgfezjuq4b7fgagn3m0hqgal.lambda-url.eu-central-1.on.aws/",
       {
         method: "POST",
@@ -13,10 +19,15 @@ document
           message: document.querySelector('[name="message"]').value,
         }),
       }
-    )
-      .then((res) => res.text())
-      .then((message) => console.log(message))
-      .catch((err) => {
-        console.log(err);
-      });
+    );
+    const message = await response.text();
+
+    if (response.ok) {
+      this.reset();
+    }
+
+    const messageElement = document.querySelector(".contact__message");
+    messageElement.innerHTML = messages[message];
+    messageElement.classList.add(response.ok ? "green" : "red");
+    messageElement.classList.remove(!response.ok ? "green" : "red");
   });

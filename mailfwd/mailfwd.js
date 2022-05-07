@@ -4,10 +4,6 @@ const emailValidator = require("email-validator");
 exports.handler = async (event) => {
   const { name, email, message } = JSON.parse(event.body);
 
-  if (!name.trim()) {
-    return { statusCode: 400, body: "name-required" };
-  }
-
   if (!message.trim()) {
     return { statusCode: 400, body: "message-required" };
   }
