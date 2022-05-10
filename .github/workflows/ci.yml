@@ -24,4 +24,5 @@ jobs:
 
       - name: Copy files to S3 with the AWS CLI
         run: |
-          aws s3 sync --exclude=".*" --exclude="mailfwd" . s3://bdeak.net
+          aws s3 sync . s3://bdeak.net \
+            --exclude=".*" --exclude="mailfwd/*" --exclude="README.md"
