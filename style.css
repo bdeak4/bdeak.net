@@ -140,7 +140,8 @@ h2 {
 
 .project__image {
   width: 800px;
-  height: 450px;
+  /* height: 450px; */
+  aspect-ratio: 800 / 450;
   overflow: hidden;
   margin-bottom: 24px;
   border-radius: 6px;
@@ -174,7 +175,7 @@ h2 {
   border-radius: 6px;
   border: 1px solid var(--color-zinc-200);
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  width: 25%;
+  width: 400px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
