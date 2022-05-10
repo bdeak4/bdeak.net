@@ -12,22 +12,26 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: "email-not-valid" };
   }
 
-  // const transporter = nodemailer.createTransport({
-  //   host: "smtp.ethereal.email",
-  //   port: 587,
-  //   auth: {
-  //     user: "[USERNAME]",
-  //     pass: "[PASSWORD]",
-  //   },
-  // });
+  const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: process.env.SMTP_PORT,
+    auth: {
+      user: process.env.SMTP_USERNAME,
+      pass: process.env.SMTP_PASSWORD,
+    },
+  });
 
-  // // send email
-  // await transporter.sendMail({
-  //   from: "from_address@example.com",
-  //   to: "to_address@example.com",
-  //   subject: "Test Email Subject",
-  //   html: "<h1>Example HTML Message Body</h1>",
-  // });
+  await transporter.sendMail({
+    from: process.env.MAIL_FROM,
+    to: process.env.MAIL_TO,
+    replyTo: email,
+    subject: `[mailfwd] New message`,
+    text: `Name: ${name}
+Email: ${email}
+
+Message:
+${message}`,
+  });
 
   return { statusCode: 200, body: "mail-sent" };
 };
