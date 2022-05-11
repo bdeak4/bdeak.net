@@ -140,7 +140,6 @@ h2 {
 
 .project__image {
   width: 800px;
-  /* height: 450px; */
   aspect-ratio: 800 / 450;
   overflow: hidden;
   margin-bottom: 24px;
@@ -157,6 +156,9 @@ h2 {
 .project__text {
   max-width: 500px;
   margin-left: 48px;
+}
+
+.project:not(:last-child) .project__text {
   margin-bottom: 48px;
 }
 
@@ -248,4 +250,47 @@ footer {
   font-size: 14px;
   color: var(--color-zinc-600);
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 64px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project__image {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .project__text {
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project__text p {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  .project__title {
+    font-size: 32px;
+  }
+
+  .packages {
+    flex-direction: column;
+  }
+
+  .package {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .package:last-child {
+    margin-bottom: 0;
+  }
 }
