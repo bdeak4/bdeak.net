@@ -241,6 +241,23 @@ h2 {
   color: green;
 }
 
+.commits {
+  margin-top: 72px;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 964px) {
+  .commits {
+    overflow-x: auto;
+    direction: rtl;
+  }
+}
+
+.commits__graph {
+  width: 867px;
+  height: 136px;
+}
+
 footer {
   padding: 18px 24px;
   font-size: 14px;
