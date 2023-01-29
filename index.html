@@ -1,205 +1,79 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bartol Deak</title>
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SCPDCCRJW8"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-SCPDCCRJW8");
-    </script>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="background"></div>
-    <div class="content">
-      <header>
-        <h1><a href="/">Bartol Deak</a></h1>
-        <nav>
-          <a href="/#projekti">Projekti</a>
-          <a href="/#paketi">Paketi</a>
-          <a href="/#kontakt">Kontakt</a>
-          <a href="https://github.com/bdeak4" target="_blank">Github</a>
-        </nav>
-      </header>
-      <main>
-        <h2 id="projekti">Projekti</h2>
-        <section class="projects">
-          <div class="project">
-            <a
-              href="https://chatter.bdeak.net"
-              target="_blank"
-              class="project__image"
-              style="background-image: url('/img/chatter.webp')"
-            >
-            </a>
-            <div class="project__text">
-              <h3 class="project__title">chatter</h3>
-              <p>
-                Python Flask web aplikacija koja vrši analizu Reddit komentara u
-                svrhu analize korelacije između popularnosti i cijene
-                kriptovalute. Za prikupljanje podataka korišteni Praw i TextBlob
-                paketi, dok je za prikaz podataka korišten Chartist.js paket.
-                Podaci pohranjeni u PostgreSQL i Redis bazama podataka.
-                Deployment pomoću Docker containera na AWS EC2.
-              </p>
-              <nav>
-                <a href="https://chatter.bdeak.net" target="_blank">Live</a>
-                <a href="https://github.com/bdeak4/chatter" target="_blank">
-                  Source
-                </a>
-              </nav>
-            </div>
-          </div>
-          <div class="project">
-            <a
-              href="https://ludo.bdeak.net"
-              target="_blank"
-              class="project__image"
-              style="background-image: url('/img/ludo.webp')"
-            >
-            </a>
-            <div class="project__text">
-              <h3 class="project__title">Čovječe, ne ljuti se</h3>
-              <p>
-                Igra napravljena pomoću React web frameworka. Deployment na AWS
-                S3/CloudFront. Projekt za DUMP Internship.
-              </p>
-              <nav>
-                <a href="https://ludo.bdeak.net" target="_blank">Live</a>
-                <a
-                  href="https://github.com/bdeak4/Internship-18-Ludo"
-                  target="_blank"
-                >
-                  Source
-                </a>
-              </nav>
-            </div>
-          </div>
-          <div class="project">
-            <a
-              href="https://postsandcomments.bdeak.net"
-              target="_blank"
-              class="project__image"
-              style="background-image: url('/img/postsandcomments.webp')"
-            >
-            </a>
-            <div class="project__text">
-              <h3 class="project__title">PostsAndComments</h3>
-              <p>
-                Forum web aplikacija koja podržava lajkanje, kreiranje postova i
-                komentara, filtriranje po tagovima,... Za dohvaćanje podataka i
-                svu interakciju korišten JavaScript. Deployment na AWS
-                S3/CloudFront. Projekt za DUMP Internship.
-              </p>
-              <nav>
-                <a href="https://postsandcomments.bdeak.net" target="_blank">
-                  Live
-                </a>
-                <a
-                  href="https://github.com/bdeak4/Internship-14-PostsAndComments"
-                  target="_blank"
-                >
-                  Source
-                </a>
-              </nav>
-            </div>
-          </div>
-        </section>
+    <header>
+      <a href="index.html">Bartol Deak</a>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/bdeak4">GitHub</a>
+      </nav>
+    </header>
 
-        <h2 id="paketi">Paketi</h2>
-        <section class="packages">
-          <div class="package">
-            <h3 class="package__title">ex_nabava</h3>
-            <p>
-              Elixir paket napravljen u svrhu lakšeg pristupa i analize javno
-              dostupnih podataka sa stranice Nabava.net.
-            </p>
-            <nav>
-              <a href="https://github.com/bdeak4/ex_nabava" target="_blank">
-                Hex
-              </a>
-              <a href="https://hex.pm/packages/ex_nabava" target="_blank">
-                Source
-              </a>
-            </nav>
-          </div>
-          <div class="package">
-            <h3 class="package__title">ex_njuskalo</h3>
-            <p>
-              Elixir paket napravljen u svrhu lakšeg pristupa i analize podataka
-              sa stranice Njuškalo.hr te automatizacije vođenja profila.
-            </p>
-            <nav>
-              <a href="https://hex.pm/packages/ex_njuskalo" target="_blank">
-                Hex
-              </a>
-              <a href="https://github.com/bdeak4/ex_njuskalo" target="_blank">
-                Source
-              </a>
-            </nav>
-          </div>
-        </section>
-
-        <h2 id="kontakt">Kontakt</h2>
-        <section class="contact">
-          <form class="contact__form">
-            <input
-              type="text"
-              name="name"
-              placeholder="Ime i prezime"
-              class="contact__input"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="contact__input"
-            />
-            <textarea
-              rows="5"
-              name="message"
-              placeholder="Poruka"
-              class="contact__textarea"
-            ></textarea>
-            <button type="submit" class="contact__button">Pošalji</button>
-            <div class="contact__message"></div>
-          </form>
-          <p>
-            ...ili pošalji mail na
-            <a href="mailto:b@bdeak.net">b@bdeak.net</a>
-          </p>
-        </section>
-
-        <section class="commits">
-          <a href="https://github.com/bdeak4" target="_blank">
-            <img
-              src="https://ghchart.rshah.org/0e7490/bdeak4"
-              alt="bdeak4's Github chart"
-              class="commits__graph"
-            />
-          </a>
-        </section>
-      </main>
-      <footer>&copy; 2022 Bartol Deak</footer>
-    </div>
-    <script src="script.js" type="module"></script>
+    <h1>Testing this blog form</h1>
+    <p class="right">12th of December, 2022</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      maxime voluptates. Velit commodi totam voluptatem itaque voluptate harum
+      et, in voluptatibus reprehenderit numquam minima recusandae soluta
+      cupiditate ea expedita inventore? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, maxime voluptates. Velit commodi totam
+      voluptatem itaque voluptate harum et, in voluptatibus reprehenderit
+      numquam minima recusandae soluta cupiditate ea expedita inventore? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <img src="https://dump.hr/images/project/2.png" alt="" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      maxime voluptates. Velit commodi totam voluptatem itaque voluptate harum
+      et, in voluptatibus reprehenderit numquam minima recusandae soluta
+      cupiditate ea expedita inventore? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, maxime voluptates. Velit commodi totam
+      voluptatem itaque voluptate harum et, in voluptatibus reprehenderit
+      numquam minima recusandae soluta cupiditate ea expedita inventore? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <h2>Testing subheadings</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      maxime voluptates. Velit commodi totam voluptatem itaque voluptate harum
+      et, in voluptatibus reprehenderit numquam minima recusandae soluta
+      cupiditate ea expedita inventore? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, maxime voluptates. Velit commodi totam
+      voluptatem itaque voluptate harum et, in voluptatibus reprehenderit
+      numquam minima recusandae soluta cupiditate ea expedita inventore? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <h2>Testing subheadings</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      maxime voluptates. Velit commodi totam voluptatem itaque voluptate harum
+      et, in voluptatibus reprehenderit numquam minima recusandae soluta
+      cupiditate ea expedita inventore? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, maxime voluptates. Velit commodi totam
+      voluptatem itaque voluptate harum et, in voluptatibus reprehenderit
+      numquam minima recusandae soluta cupiditate ea expedita inventore? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      maxime voluptates. Velit commodi totam voluptatem itaque voluptate harum
+      et, in voluptatibus reprehenderit numquam minima recusandae soluta
+      cupiditate ea expedita inventore? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, maxime voluptates. Velit commodi totam
+      voluptatem itaque voluptate harum et, in voluptatibus reprehenderit
+      numquam minima recusandae soluta cupiditate ea expedita inventore? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p><a href="">&larr; Blog</a></p>
   </body>
 </html>
