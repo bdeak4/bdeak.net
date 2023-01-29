@@ -1,15 +1,8 @@
 const nodemailer = require("nodemailer");
-const emailValidator = require("email-validator");
 
-exports.handler = async (event) => {
-  const { name, email, message } = JSON.parse(event.body);
-
-  if (!message.trim()) {
-    return { statusCode: 400, body: "message-required" };
-  }
-
-  if (!emailValidator.validate(email)) {
-    return { statusCode: 400, body: "email-not-valid" };
+exports.handler = async ({ body }) => {
+  if (!body.trim()) {
+    return { statusCode: 400 };
   }
 
   const transporter = nodemailer.createTransport({
@@ -26,12 +19,8 @@ exports.handler = async (event) => {
     to: process.env.MAIL_TO,
     replyTo: email,
     subject: `[mailfwd] New message`,
-    text: `Name: ${name}
-Email: ${email}
-
-Message:
-${message}`,
+    text: body,
   });
 
-  return { statusCode: 200, body: "mail-sent" };
+  return { statusCode: 200 };
 };

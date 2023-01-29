@@ -26,18 +26,29 @@
       form below. Please include your e-mail address if you would like a
       response.
     </p>
-    <form class="contact__form">
+    <form class="contact-form">
       <textarea
         rows="6"
         name="message"
         placeholder="Type something..."
+        class="message-textarea"
+        autofocus
       ></textarea>
-      <button type="submit">Send feedback</button>
-      <div class="contact__message"></div>
+
+      <button type="submit" class="submit-button">Send feedback</button>
+
+      <p class="received-message hidden">
+        Feedback received successfully. Thanks!
+      </p>
+      <p class="error-message hidden">
+        Oops! There was a problem sending feedback.
+      </p>
     </form>
     <p>
-      ...or just send me an email
+      ...or just send me an e-mail at
       <a href="mailto:b@bdeak.net">b@bdeak.net</a>
     </p>
+
+    <script src="./js/contact.js"></script>
   </body>
 </html>
