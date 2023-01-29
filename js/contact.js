@@ -10,13 +10,19 @@ const hide = (el) => el.classList.add("hidden");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const response = await fetch(
-    "https://sr2k3rjwcgfezjuq4b7fgagn3m0hqgal.lambda-url.eu-central-1.on.aws/",
-    { method: "POST", body: messageTextarea.value }
-  );
+  let ok;
+  try {
+    const response = await fetch(
+      "https://sr2k3rjwcgfezjuq4b7fgagn3m0hqgal.lambda-url.eu-central-1.on.aws/",
+      { method: "POST", body: messageTextarea.value }
+    );
+    ok = response.ok;
+  } catch {
+    ok = false;
+  }
 
-  hide(response.ok ? errorMessage : receivedMessage);
-  show(response.ok ? receivedMessage : errorMessage);
+  hide(ok ? errorMessage : receivedMessage);
+  show(ok ? receivedMessage : errorMessage);
 
   this.reset();
 });

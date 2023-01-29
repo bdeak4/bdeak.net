@@ -1,4 +1,5 @@
 @import url("https://rsms.me/inter/inter.css");
+@import url("https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css");
 
 ::selection {
   background-color: #155e75;
@@ -53,4 +54,21 @@ h3 {
 
 img {
   width: 100%;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+pre {
+  font-family: "Iosevka Web";
+  font-variant-ligatures: none;
+  font-size: 14px;
+  background-color: #27272a;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.gray {
+  color: #a1a1aa;
 }

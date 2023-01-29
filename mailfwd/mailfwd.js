@@ -17,7 +17,6 @@ exports.handler = async ({ body }) => {
   await transporter.sendMail({
     from: process.env.MAIL_FROM,
     to: process.env.MAIL_TO,
-    replyTo: email,
     subject: `[mailfwd] New message`,
     text: body,
   });
