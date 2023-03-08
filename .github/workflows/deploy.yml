@@ -1,20 +1,14 @@
-name: Deploy
-
+name: Static site deployment
 on:
   push:
     branches:
       - main
 
-  workflow_dispatch:
-
 jobs:
   deploy:
-    name: Deploy to Amazon S3
+    name: Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -22,7 +16,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-central-1
 
-      - name: Copy files to S3 with the AWS CLI
-        run: |
-          aws s3 sync . s3://bdeak.net \
-            --exclude=".github" --exclude="mailfwd" --exclude="README.md"
+      - name: Run deploy script
+        run: ./deploy.sh
