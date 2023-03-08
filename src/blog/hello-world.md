@@ -2,4 +2,11 @@
 title: Hello world
 ---
 
-First post on new blog
+```
+#include <stdio.h>
+
+int main() {
+  printf("Hello world!");
+  return 0;
+}
+```
