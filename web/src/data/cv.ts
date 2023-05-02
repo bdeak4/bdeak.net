@@ -11,9 +11,9 @@ export const timeline: Organization[] = [
     projects: [
       {
         name: 'PostsAndComments',
-        description: `Forum web aplikacija koja podržava lajkanje, kreiranje postova
-				i komentara, filtriranje po tagovima,... Za dohvaćanje podataka i svu
-				interakciju korišten JavaScript. Deployment na AWS S3/CloudFront.
+        description: `Forum web aplikacija koja podržava lajkanje, kreiranje
+				postova i komentara, filtriranje po tagovima,... Za dohvaćanje podataka
+				i svu interakciju korišten JavaScript. Deployment na AWS S3/CloudFront.
 				Projekt za DUMP Internship.`,
         about: '',
         tech: [],
@@ -77,7 +77,6 @@ export const timeline: Organization[] = [
         about: '',
         tech: [],
         web: '',
-        src: '',
       },
       {
         name: 'The Heist',
@@ -85,7 +84,6 @@ export const timeline: Organization[] = [
         about: '',
         tech: [],
         web: '',
-        src: '',
       },
     ],
   },
