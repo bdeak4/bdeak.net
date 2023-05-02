@@ -1,9 +1,5 @@
-<script lang="ts">
-  import Linkicon from './linkicon.svelte';
-
-  export let projects: Project[];
-
-  type Project = {
+<script lang="ts" context="module">
+  export type Project = {
     name: string;
     description?: string;
     web?: string;
@@ -11,6 +7,12 @@
     img?: string;
     imgbrightness?: number;
   };
+</script>
+
+<script lang="ts">
+  import Linkicon from './linkicon.svelte';
+
+  export let projects: Project[];
 </script>
 
 <ul>
