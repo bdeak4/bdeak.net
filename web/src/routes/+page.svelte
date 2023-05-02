@@ -2,7 +2,7 @@
   import Organizations from '../components/organizations.svelte';
   import Projects from '../components/projects.svelte';
   import Section from '../components/section.svelte';
-  import { organizations, projects } from '../data';
+  import { work, nonprofits, projects } from '../data';
 </script>
 
 <!-- <h1>Bartol Deak</h1>
@@ -20,7 +20,11 @@ reach out:
   <Section title="about">smth about me</Section>
 
   <Section title="work">
-    <Organizations {organizations} />
+    <Organizations organizations={work} />
+  </Section>
+
+  <Section title="nonprofits">
+    <Organizations organizations={nonprofits} />
   </Section>
 
   <Section title="projects">

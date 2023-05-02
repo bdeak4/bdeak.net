@@ -16,15 +16,15 @@
 
   :global(a) {
     color: #fff;
+    text-decoration-color: #555;
   }
 
   :global(a:hover) {
-    text-decoration: none;
+    text-decoration-color: #fff;
   }
 
   main {
-    max-width: 500px;
+    max-width: 550px;
     padding: 16px;
-    padding-top: 32px;
   }
 </style>

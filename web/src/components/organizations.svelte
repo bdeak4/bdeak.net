@@ -20,7 +20,7 @@
   {#each organizations as organization}
     <li>
       <div class="header">
-        <h2>{organization.name}</h2>
+        <h2><a href={organization.web}>{organization.name}</a></h2>
         <span>{organization.title}</span>
         <span>{organization.timeline}</span>
       </div>
@@ -49,5 +49,8 @@
   }
   h2 {
     margin: 0;
+  }
+  h2 a {
+    text-decoration: none;
   }
 </style>
