@@ -1,7 +1,7 @@
 export const work = [
   {
     name: 'Metacodex',
-    title: 'DevOps / Software Developer',
+    title: 'DevOps / Software Engineer',
     timeline: '2022 - present',
     projects: [
       {
@@ -56,6 +56,7 @@ export const nonprofits = [
         AWS S3/CloudFront. Projekt za DUMP Internship.`,
         web: 'https://ludo.bdeak.net',
         src: 'https://github.com/bdeak4/Internship-18-Ludo',
+        img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/ludo.webp',
       },
       {
         name: 'PostsAndComments',
@@ -65,6 +66,7 @@ export const nonprofits = [
 				Projekt za DUMP Internship.`,
         web: 'https://postsandcomments.bdeak.net',
         src: 'https://github.com/bdeak4/Internship-14-PostsAndComments',
+        img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/postsandcomments.webp',
       },
     ],
   },
@@ -76,6 +78,8 @@ export const projects = [
     description: 'Python Flask web aplikacija koja vrši analizu Reddit komentara',
     web: 'https://chatter.exposed/',
     src: 'https://github.com/bdeak4/chatter',
+    img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/chatter.webp',
+    imgbrightness: 0.4,
   },
   {
     name: 'tree-diff',

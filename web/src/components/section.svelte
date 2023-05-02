@@ -25,6 +25,7 @@
     padding-left: 16px;
     font-size: 36px;
     text-transform: uppercase;
+    line-height: 1;
   }
   .content {
     flex-grow: 1;

@@ -49,6 +49,8 @@
   }
   h2 {
     margin: 0;
+    line-height: 1;
+    font-size: 24px;
   }
   h2 a {
     text-decoration: none;
