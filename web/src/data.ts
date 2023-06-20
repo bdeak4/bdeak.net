@@ -1,18 +1,75 @@
 export const work = [
   {
-    name: 'Metacodex',
+    name: 'solbound',
+    title: 'DevOps / Software Engineer',
+    timeline: '2023 - present',
+    projects: [
+      {
+        name: 'solana_wallet_exporter',
+        description: 'Prometheus exporter for Solana wallet SOL and token balance',
+        tech: ['Go', 'Docker', 'GitHub Actions', 'Solana'],
+        src: 'https://github.com/solbound-dev/solana_wallet_exporter',
+      },
+      {
+        name: 'The Remnants',
+        description: 'Mobile idle game built on the Solana Blockchain.',
+        tech: [
+          'TypeScript',
+          'React',
+          'Nestjs',
+          'AWS',
+          'Terraform',
+          'Ansible',
+          'Docker',
+          'Debian Linux',
+          'GitHub Actions',
+        ],
+        web: 'https://theremnants.app/',
+        img: '/projects/theremnants.png',
+      },
+    ],
+  },
+  {
+    name: 'LongwoodLabs',
     title: 'DevOps / Software Engineer',
     timeline: '2022 - present',
     projects: [
       {
         name: 'The Heist',
-        description: '',
+        description:
+          'A high-stakes, risk-based game of crime, corruption...and bananas. Idle web game built on the Solana Blockchain.',
+        tech: [
+          'TypeScript',
+          'React',
+          'Nestjs',
+          'AWS',
+          'Terraform',
+          'Ansible',
+          'Docker',
+          'Debian Linux',
+          'GitHub Actions',
+          'Metaplex',
+          'Solana',
+        ],
         web: 'https://theheist.game/',
+        img: '/projects/theheist.png',
       },
       {
         name: 'The Remnants',
-        description: 'Mobile idle game built on the Solana Blockchain',
+        description: 'Mobile idle game built on the Solana Blockchain.',
+        tech: [
+          'TypeScript',
+          'React',
+          'Nestjs',
+          'AWS',
+          'Terraform',
+          'Ansible',
+          'Docker',
+          'Debian Linux',
+          'GitHub Actions',
+        ],
         web: 'https://theremnants.app/',
+        img: '/projects/theremnants.png',
       },
     ],
   },
@@ -39,7 +96,7 @@ export const nonprofits = [
     timeline: '2022 - present',
     projects: [
       {
-        name: 'DUMP Days 2023 Web',
+        name: 'DUMP Days 2023 App',
         web: 'https://days.dump.hr/',
       },
     ],
@@ -52,18 +109,15 @@ export const nonprofits = [
     projects: [
       {
         name: 'Ludo',
-        description: `Igra napravljena pomoću React web frameworka. Deployment na
-        AWS S3/CloudFront. Projekt za DUMP Internship.`,
+        tech: ['React', 'JavaScript', 'AWS'],
         web: 'https://ludo.bdeak.net',
         src: 'https://github.com/bdeak4/Internship-18-Ludo',
         img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/ludo.webp',
       },
       {
         name: 'PostsAndComments',
-        description: `Forum web aplikacija koja podržava lajkanje, kreiranje
-				postova i komentara, filtriranje po tagovima,... Za dohvaćanje podataka
-				i svu interakciju korišten JavaScript. Deployment na AWS S3/CloudFront.
-				Projekt za DUMP Internship.`,
+        description: 'Forum web app',
+        tech: ['JavaScript', 'CSS Animations', 'AWS'],
         web: 'https://postsandcomments.bdeak.net',
         src: 'https://github.com/bdeak4/Internship-14-PostsAndComments',
         img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/postsandcomments.webp',

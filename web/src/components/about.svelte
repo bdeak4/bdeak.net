@@ -1,13 +1,12 @@
 <div class="container">
-  <img src="https://pbs.twimg.com/profile_images/1649561185673461760/CnkFQjKN_400x400.jpg" alt="" />
-  <!-- <img src="https://avatars.githubusercontent.com/u/32748145?v=4" alt="" /> -->
+  <img src="https://github.com/bdeak4.png" alt="" />
   <div class="text">
     <h1>Bartol Deak</h1>
-    <p>web3 yaml engineer</p>
+    <p>DevOps Engineer building Web3 future</p>
     <nav>
-      <a href="https://github.com/bdeak4">github</a>
-      <a href="https://twitter.com/bd4245">twitter</a>
-      <a href="https://discordapp.com/users/848855064244256788">discord</a>
+      <a href="https://github.com/bdeak4">GitHub</a>
+      <a href="https://twitter.com/bd4245">Twitter</a>
+      <a href="https://discordapp.com/users/848855064244256788">Discord</a>
       <a href="mailto:b@bdeak.net">b@bdeak.net</a>
     </nav>
   </div>
@@ -20,9 +19,13 @@
     gap: 24px;
   }
   img {
-    width: 125px;
-    height: 125px;
+    width: 122px;
+    height: 122px;
     border-radius: 50%;
+    transition: transform 5s linear;
+  }
+  img:hover {
+    transform: rotate(360deg);
   }
   .text {
     display: flex;
