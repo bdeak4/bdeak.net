@@ -2,7 +2,7 @@
   <img src="https://github.com/bdeak4.png" alt="" />
   <div class="text">
     <h1>Bartol Deak</h1>
-    <p>DevOps Engineer building Web3 future</p>
+    <p>DevOps / Software Engineer</p>
     <nav>
       <a href="https://github.com/bdeak4">GitHub</a>
       <a href="https://twitter.com/bd4245">Twitter</a>

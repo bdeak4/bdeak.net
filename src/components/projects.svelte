@@ -2,7 +2,7 @@
   export type Project = {
     name: string;
     description?: string;
-    tech: string[];
+    tech?: string[];
     web?: string;
     src?: string;
     img?: string;

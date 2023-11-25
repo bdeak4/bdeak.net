@@ -1,38 +1,7 @@
 export const work = [
   {
     name: 'solbound',
-    title: 'DevOps / Software Engineer',
     timeline: '2023 - present',
-    projects: [
-      {
-        name: 'solana_wallet_exporter',
-        description: 'Prometheus exporter for Solana wallet SOL and token balance',
-        tech: ['Go', 'Docker', 'GitHub Actions', 'Solana'],
-        src: 'https://github.com/solbound-dev/solana_wallet_exporter',
-      },
-      {
-        name: 'The Remnants',
-        description: 'Mobile idle game built on the Solana Blockchain.',
-        tech: [
-          'TypeScript',
-          'React',
-          'Nestjs',
-          'AWS',
-          'Terraform',
-          'Ansible',
-          'Docker',
-          'Debian Linux',
-          'GitHub Actions',
-        ],
-        web: 'https://theremnants.app/',
-        img: '/projects/theremnants.png',
-      },
-    ],
-  },
-  {
-    name: 'LongwoodLabs',
-    title: 'DevOps / Software Engineer',
-    timeline: '2022 - present',
     projects: [
       {
         name: 'The Heist',
@@ -46,13 +15,13 @@ export const work = [
           'Terraform',
           'Ansible',
           'Docker',
-          'Debian Linux',
+          'Linux',
           'GitHub Actions',
           'Metaplex',
           'Solana',
         ],
         web: 'https://theheist.game/',
-        img: '/projects/theheist.png',
+        img: '/img/theheist.png',
       },
       {
         name: 'The Remnants',
@@ -65,18 +34,23 @@ export const work = [
           'Terraform',
           'Ansible',
           'Docker',
-          'Debian Linux',
+          'Linux',
           'GitHub Actions',
         ],
         web: 'https://theremnants.app/',
-        img: '/projects/theremnants.png',
+        img: '/img/theremnants.png',
+      },
+      {
+        name: 'solana_wallet_exporter',
+        description: 'Prometheus exporter for Solana wallet SOL and token balance',
+        tech: ['Go', 'Docker', 'GitHub Actions', 'Solana'],
+        src: 'https://github.com/solbound-dev/solana_wallet_exporter',
       },
     ],
   },
   {
     name: 'ExtensionEngine',
     web: 'https://extensionengine.com/',
-    title: 'Software Development Intern',
     timeline: '2022',
     projects: [
       {
@@ -92,19 +66,28 @@ export const nonprofits = [
   {
     name: 'DUMP',
     web: 'https://dump.hr/',
-    title: 'System administrator / Software Developer',
     timeline: '2022 - present',
     projects: [
       {
-        name: 'DUMP Days 2023 App',
+        name: 'DUMP Days 2024 App',
         web: 'https://days.dump.hr/',
+      },
+      {
+        name: 'DUMP Internship app',
+        web: 'https://days.dump.hr/',
+      },
+      {
+        name: 'Studentski Poslovi',
+      },
+      {
+        name: 'DUMP Days 2023 App',
+        web: 'https://2023.days.dump.hr/',
       },
     ],
   },
   {
     name: 'DUMP Internship',
     web: 'https://dump.hr/internship',
-    title: 'Software Development Intern',
     timeline: '2021 - 2022',
     projects: [
       {
@@ -132,7 +115,7 @@ export const projects = [
     description: 'Python Flask web aplikacija koja vrši analizu Reddit komentara',
     web: 'https://chatter.exposed/',
     src: 'https://github.com/bdeak4/chatter',
-    img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/chatter.webp',
+    img: '/img/chatter.png',
     imgbrightness: 0.4,
   },
   {

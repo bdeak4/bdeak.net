@@ -3,7 +3,6 @@
 
   export type Organization = {
     name: string;
-    title: string;
     timeline: string;
     projects: Project[];
     web?: string;
@@ -21,7 +20,6 @@
     <li>
       <div class="header">
         <h2><a href={organization.web}>{organization.name}</a></h2>
-        <span>{organization.title}</span>
         <span>{organization.timeline}</span>
       </div>
       <Projects projects={organization.projects} />
