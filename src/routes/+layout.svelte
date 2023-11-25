@@ -2,6 +2,10 @@
   import '@fontsource/inter';
 </script>
 
+<svelte:head>
+  <title>Bartol Deak - DevOps / Software Engineer</title>
+</svelte:head>
+
 <main>
   <slot />
 </main>
