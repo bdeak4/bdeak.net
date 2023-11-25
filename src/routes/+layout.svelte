@@ -13,16 +13,16 @@
     background-color: #000;
     margin: 0;
   }
-
   :global(a) {
     color: #fff;
     text-decoration-color: #555;
   }
-
   :global(a:hover) {
     text-decoration-color: #fff;
   }
-
+  :global(::selection) {
+    background-color: #0891b2;
+  }
   main {
     max-width: 550px;
     padding: 16px;

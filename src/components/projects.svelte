@@ -18,36 +18,29 @@
 
 <ul class="projects">
   {#each projects as project}
-    <li class={`project ${project.img ? 'hasimg' : ''}`}>
+    <li class="project" class:hasimg={project.img}>
       <h3>{project.name}</h3>
       {#if project.description}
         <p>{project.description}</p>
       {/if}
-      <div class="footer">
-        {#if project.web || project.src}
-        <nav>
-          
-        </nav>
+      <ul class="footer">
+        {#if project.web}
+          <li class="link">
+            <a href={project.web}>{new URL(project.web).hostname}</a>
+            <Linkicon />
+          </li>
+        {/if}
+        {#if project.src}
+          <li class="link">
+            <a href={project.src}>source code</a>
+          </li>
         {/if}
         {#if project.tech}
-          <ul class="tech">
-            {#if project.web}
-              <span>
-                <a href={project.web}>{new URL(project.web).hostname}</a>
-                <Linkicon />
-              </span>
-            {/if}
-            {#if project.src}
-              <span>
-                <a href={project.src}>source code</a>
-              </span>
-            {/if}
-            {#each project.tech as tech}
-              <li>{tech}</li>
-            {/each}
-          </ul>
+          {#each project.tech as tech}
+            <li class="tech">{tech}</li>
+          {/each}
         {/if}
-      </div>
+      </ul>
       {#if project.img}
         <img
           src={project.img}
@@ -105,19 +98,21 @@
     margin: 0;
     line-height: 1.5;
   }
-  .tech {
+  .footer {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     padding-left: 0;
   }
-  .tech span {
+  .footer li {
+    list-style-type: none;
+  }
+  .footer .link {
     padding: 0 1px;
   }
-  .tech li {
-    list-style-type: none;
+  .footer .tech {
     font-size: 12px;
-    background-color: #222222BF;
+    background-color: #222222bf;
     padding: 4px 8px;
     border-radius: 10px;
   }

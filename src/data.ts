@@ -73,11 +73,14 @@ export const nonprofits = [
         web: 'https://days.dump.hr/',
       },
       {
-        name: 'DUMP Internship app',
+        name: 'DUMP Internship App',
         web: 'https://days.dump.hr/',
       },
       {
         name: 'Studentski Poslovi',
+      },
+      {
+        name: 'SafetyNet',
       },
       {
         name: 'DUMP Days 2023 App',
@@ -95,7 +98,7 @@ export const nonprofits = [
         tech: ['React', 'JavaScript', 'AWS'],
         web: 'https://ludo.bdeak.net',
         src: 'https://github.com/bdeak4/Internship-18-Ludo',
-        img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/ludo.webp',
+        img: '/img/ludo.png',
       },
       {
         name: 'PostsAndComments',
@@ -103,7 +106,7 @@ export const nonprofits = [
         tech: ['JavaScript', 'CSS Animations', 'AWS'],
         web: 'https://postsandcomments.bdeak.net',
         src: 'https://github.com/bdeak4/Internship-14-PostsAndComments',
-        img: 'https://raw.githubusercontent.com/bdeak4/bdeak.net/main/src/img/projects/postsandcomments.webp',
+        img: '/img/postsandcomments.png',
       },
     ],
   },
