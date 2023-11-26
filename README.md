@@ -1,3 +1,3 @@
 # bdeak.net
 
-![](./static/img/bdeak-net.png)
+[![](./static/img/bdeak-net.png)](https://bdeak.net/)
