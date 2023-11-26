@@ -5,8 +5,7 @@ export const work = [
     projects: [
       {
         name: 'The Heist',
-        description:
-          'A high-stakes, risk-based game of crime, corruption...and bananas. Idle web game built on the Solana Blockchain.',
+        description: 'Idle web game built on the Solana Blockchain',
         tech: [
           'TypeScript',
           'React',
@@ -25,7 +24,7 @@ export const work = [
       },
       {
         name: 'The Remnants',
-        description: 'Mobile idle game built on the Solana Blockchain.',
+        description: 'Idle web game built on the Solana Blockchain',
         tech: [
           'TypeScript',
           'React',

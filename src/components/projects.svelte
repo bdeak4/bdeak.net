@@ -72,8 +72,10 @@
     position: relative;
     overflow: hidden;
   }
-  .project.hasimg {
-    aspect-ratio: 2/1;
+  @media (min-width: 600px) {
+    .project.hasimg {
+      aspect-ratio: 2/1;
+    }
   }
   img {
     position: absolute;
@@ -108,7 +110,7 @@
     list-style-type: none;
   }
   .footer .link {
-    padding: 0 1px;
+    padding: 1px;
   }
   .footer .tech {
     font-size: 12px;

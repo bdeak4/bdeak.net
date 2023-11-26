@@ -17,6 +17,7 @@
     display: flex;
     align-items: flex-start;
     gap: 24px;
+    position: relative;
   }
   img {
     width: 122px;
@@ -26,6 +27,27 @@
   }
   img:hover {
     transform: rotate(360deg);
+  }
+  @media (max-width: 600px) {
+    .container {
+      margin-top: 56px;
+    }
+    img {
+      position: absolute;
+      top: -61px;
+      right: 24px;
+      border: 1px solid #333;
+    }
+  }
+  @media (max-width: 500px) {
+    .container {
+      margin-top: 35px;
+    }
+    img {
+      width: 76px;
+      height: 76px;
+      top: -38px;
+    }
   }
   .text {
     display: flex;
@@ -49,5 +71,6 @@
     display: flex;
     gap: 8px;
     line-height: 1.5;
+    flex-wrap: wrap;
   }
 </style>
