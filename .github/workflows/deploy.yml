@@ -14,16 +14,26 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
-
-      - run: |
-          yarn install
-          yarn build
-
+          node-version: 18.x
+          cache: 'npm'
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-central-1
 
-      - run: aws s3 sync build/ s3://bdeak.net
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build app
+        run: yarn build
+
+      - name: Copy files to S3
+        run: aws s3 sync build/ s3://bdeak.net
+
+      - name: Invalidate CloudFront cache
+        run: |
+          id=$(aws cloudfront list-distributions | jq -r ".DistributionList.Items[]|select(.Aliases.Items|any(. == \"bdeak.net\")).Id")
+          aws cloudfront create-invalidation --distribution-id $id --paths "/*"
+        env:
+          AWS_MAX_ATTEMPTS: 10
