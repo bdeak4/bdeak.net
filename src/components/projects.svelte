@@ -72,9 +72,12 @@
     position: relative;
     overflow: hidden;
   }
-  @media (min-width: 600px) {
+  .project.hasimg {
+    aspect-ratio: 2/1;
+  }
+  @media (max-width: 600px) {
     .project.hasimg {
-      aspect-ratio: 2/1;
+      aspect-ratio: 1.25/1;
     }
   }
   img {

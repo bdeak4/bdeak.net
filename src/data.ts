@@ -217,4 +217,11 @@ export const projects = [
     img: '/img-optimized/github-mirror.png',
     tech: ['Bash', 'Docker', 'Nginx'],
   },
+  {
+    name: 'this website',
+    web: 'https://bdeak.net/',
+    src: 'https://github.com/bdeak4/bdeak.net',
+    img: '/img-optimized/bdeak-net.png',
+    tech: ['Svelte', 'AWS'],
+  },
 ];
