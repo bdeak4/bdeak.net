@@ -1,5 +1,6 @@
 <script>
   import About from '../components/about.svelte';
+  import Contact from '../components/contact.svelte';
   import Organizations from '../components/organizations.svelte';
   import Projects from '../components/projects.svelte';
   import Section from '../components/section.svelte';
@@ -21,6 +22,10 @@
 
   <Section title="projects">
     <Projects {projects} />
+  </Section>
+
+  <Section title="contact">
+    <Contact />
   </Section>
 </div>
 

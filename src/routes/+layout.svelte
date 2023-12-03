@@ -35,4 +35,12 @@
     padding: 16px;
     padding-top: 32px;
   }
+  /* fix for chrome autofill */
+  :global(input:-webkit-autofill),
+  :global(input:-webkit-autofill:focus) {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+  :global(input[data-autocompleted]) {
+    background-color: transparent !important;
+  }
 </style>
