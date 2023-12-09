@@ -42,7 +42,7 @@ export const work = [
       {
         name: 'solana_wallet_exporter',
         description: 'Prometheus exporter for Solana wallet SOL and token balance',
-        tech: ['Go', 'Docker', 'GitHub Actions', 'Solana'],
+        tech: ['Prometheus', 'Go', 'Docker', 'GitHub Actions', 'Solana'],
         src: 'https://github.com/solbound-dev/solana_wallet_exporter',
       },
     ],
