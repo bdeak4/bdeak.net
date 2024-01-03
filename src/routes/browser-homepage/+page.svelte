@@ -10,14 +10,16 @@
   $: dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDay());
   $: dayEnd = new Date(now.getFullYear(), now.getMonth(), now.getDay() + 1);
 
-  let clear;
+  let clear: number;
   $: {
     clearInterval(clear);
     clear = setInterval(() => (now = new Date()), 1000);
   }
 
   const calculatePercentage = (start: Date, end: Date) => {
-    return (((now - start) / (end - start)) * 100).toFixed(2);
+    const duration = end.getTime() - start.getTime();
+    const passed = now.getTime() - start.getTime();
+    return ((passed / duration) * 100).toFixed(2);
   };
 </script>
 
