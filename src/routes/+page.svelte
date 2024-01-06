@@ -7,6 +7,10 @@
   import { work, nonprofits, projects } from '../data';
 </script>
 
+<svelte:head>
+  <title>Bartol Deak - DevOps / Software Engineer</title>
+</svelte:head>
+
 <div class="sections">
   <Section title="about">
     <About />
