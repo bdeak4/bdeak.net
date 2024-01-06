@@ -23,6 +23,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>Time</title>
+</svelte:head>
+
 <h1>
   <span>year:</span>
   {calculatePercentage(yearStart, yearEnd)}%
