@@ -3,10 +3,6 @@
   import Analytics from '../components/analytics.svelte';
 </script>
 
-<svelte:head>
-  <title>Bartol Deak - DevOps / Software Engineer</title>
-</svelte:head>
-
 <Analytics />
 
 <main>
