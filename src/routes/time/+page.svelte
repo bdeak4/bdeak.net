@@ -7,8 +7,8 @@
   $: monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
   $: monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 1);
 
-  $: dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDay());
-  $: dayEnd = new Date(now.getFullYear(), now.getMonth(), now.getDay() + 1);
+  $: dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  $: dayEnd = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
 
   let clear: number;
   $: {
