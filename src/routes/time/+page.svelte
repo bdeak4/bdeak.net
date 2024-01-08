@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-  <title>Time</title>
+  <title>time</title>
 </svelte:head>
 
 <h1>
