@@ -1,8 +1,27 @@
 export const work = [
   {
     name: 'solbound',
+    web: 'https://solbound.dev/',
     timeline: '2023 - present',
     projects: [
+      {
+        name: 'Chomp',
+        description:
+          'Chomp is a quiz game that leverages “Wisdom of the Crowd” to get you the best answers!',
+        tech: [
+          'TypeScript',
+          'React',
+          'Next.js',
+          'PostgreSQL',
+          'AWS',
+          'Vercel',
+          'GitHub Actions',
+          'Solana',
+        ],
+        web: 'https://app.chomp.games/',
+        img: '/img-optimized/chomp.webp',
+        imgbrightness: 0.4,
+      },
       {
         name: 'The Heist',
         description: 'Idle web game built on the Solana Blockchain',
@@ -74,6 +93,7 @@ export const nonprofits = [
         description: 'DUMP Days 2024 conference companion app',
         web: 'https://days.dump.hr/',
         src: 'https://github.com/dump-hr/ddays-app',
+        img: '/img-optimized/ddays-app-2024.webp',
         tech: [
           'TypeScript',
           'React',
