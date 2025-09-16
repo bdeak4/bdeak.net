@@ -2,8 +2,27 @@ export const work = [
   {
     name: 'solbound',
     web: 'https://solbound.dev/',
-    timeline: '2023 - present',
+    timeline: '2022 - present',
     projects: [
+      {
+        name: 'Defi Dungeons',
+        description: 'Idle web game built on the Solana Blockchain',
+        tech: [
+          'TypeScript',
+          'React',
+          'Nestjs',
+          'PostgreSQL',
+          'AWS',
+          'Terraform',
+          'Ansible',
+          'Docker',
+          'GitHub Actions',
+          'Metaplex',
+          'Solana',
+        ],
+        web: 'https://dungeons.game/',
+        img: '/img-optimized/defidungeons.webp',
+      },
       {
         name: 'Chomp',
         description:
@@ -89,9 +108,27 @@ export const nonprofits = [
     timeline: '2022 - present',
     projects: [
       {
+        name: 'DUMP Days 2025 App',
+        description: 'DUMP Days 2025 conference companion app',
+        web: 'https://2025-days.dump.hr/',
+        src: 'https://github.com/dump-hr/ddays-app',
+        img: '/img-optimized/ddays-app-2025.webp',
+        tech: [
+          'TypeScript',
+          'React',
+          'Nestjs',
+          'PostgreSQL',
+          'Drizzle',
+          'AWS',
+          'Terraform',
+          'Ansible',
+          'Docker',
+        ],
+      },
+      {
         name: 'DUMP Days 2024 App',
         description: 'DUMP Days 2024 conference companion app',
-        web: 'https://days.dump.hr/',
+        web: 'https://2024-days.dump.hr/',
         src: 'https://github.com/dump-hr/ddays-app',
         img: '/img-optimized/ddays-app-2024.webp',
         tech: [
